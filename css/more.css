@@ -15,10 +15,18 @@ body {
 .nav-header{
   display: inline;
 }
+
 .nav-title {
   display: inline-block;
   font-size: 25px;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-title{
+    font-size: 15px;
+    padding: 5px;
+  }
 }
 
 .nav-links {
@@ -28,11 +36,24 @@ body {
   padding: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-links{
+    font-size: 10px;
+    padding: 6px;
+  }
+}
+
 .nav-links a {
   color: white;
   background-color: transparent;
   text-decoration: none;
   margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links a{
+    margin: 5px;
+  }
 }
 
 a:hover {
@@ -43,10 +64,22 @@ a:active {
   color: red;
 }
 
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .more-header{
   padding-top: 120px; 
   font-size: 25px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .more-header{
+    font-size: 15px;
+  }
 }
 
 .experience{
@@ -54,15 +87,64 @@ a:active {
   grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .experience{
+    grid-template-columns: none;
+    grid-template-rows: 3fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience{
+    grid-template-columns: none;
+    grid-template-rows: 3fr 1fr;
+  }
+}
+
 .experience img {
   width: 400px;
-  padding-left: 300px;
+  padding-left: 30%;
   padding-top: 30px;
   transition: 500ms ease-in-out;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .experience img {
+    width: 400px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience img{
+    width: 200px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .image{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paragraph{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .experience p {
   padding-top: 150px;
+}
+
+@media screen and (max-width: 1100px) {
+  .experience p{
+    padding-top: 10px;
+    width: 260px;
+  }
 }
 
 .interests{
@@ -71,19 +153,54 @@ a:active {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1100px) {
+  .interests{
+    grid-template-columns: none;
+    grid-template-rows: 3fr 1fr;
+  }
+}
+
 .interests img {
   width: 400px;
-  padding-left: 300px;
+  padding-left: 30%;
   padding-top: 30px;
   transition: 500ms ease-in-out;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .interests img{
+    width: 400px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interests img{
+    width: 200px;
+    padding-left: 0px;
+  }
 }
 
 img:hover {
   width: 500px;
 }
 
+@media screen and (max-width: 768px) {
+  img:hover{
+    width: 250px;
+  }
+}
+
 .interests p {
   padding-top: 150px;
+}
+
+@media screen and (max-width: 1100px) {
+  .interests p{
+    padding-top: 10px;
+    width: 260px;
+  }
 }
 
 .emphasize {

@@ -15,10 +15,18 @@ body {
 .nav-header{
   display: inline;
 }
+
 .nav-title {
   display: inline-block;
   font-size: 25px;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-title{
+    font-size: 15px;
+    padding: 5px;
+  }
 }
 
 .nav-links {
@@ -28,11 +36,24 @@ body {
   padding: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-links{
+    font-size: 10px;
+    padding: 6px;
+  }
+}
+
 .nav-links a {
   color: white;
   background-color: transparent;
   text-decoration: none;
   margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links a{
+    margin: 5px;
+  }
 }
 
 a:hover {
@@ -49,6 +70,12 @@ a:active {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-header{
+    font-size: 15px;
+  }
+}
+
 .table-parent {
   padding-top: 100px;
   display: flex;
@@ -61,6 +88,28 @@ a:active {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .table-properties{
+    font-size: 10px;
+  }
+}
+
+.table-properties img {
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-properties img{
+    width: 40px;
+  }
+}
+
 tr.table-rows>td{ 
   padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  tr.table-rows>td{
+    padding: 15px;
+  }
 }

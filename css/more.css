@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  color: white;
+  position: fixed;
+}
+
+.nav-header{
+  display: inline;
+}
+.nav-title {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.nav-links a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: red;
+}
+
+.more-header{
+  padding-top: 120px; 
+  font-size: 25px;
+  text-align: center;
+}
+
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experience img {
+  width: 400px;
+  padding-left: 300px;
+  padding-top: 30px;
+  transition: 500ms ease-in-out;
+}
+
+.experience p {
+  padding-top: 150px;
+}
+
+.interests{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+.interests img {
+  width: 400px;
+  padding-left: 300px;
+  padding-top: 30px;
+  transition: 500ms ease-in-out;
+}
+
+img:hover {
+  width: 500px;
+}
+
+.interests p {
+  padding-top: 150px;
+}
+
+.emphasize {
+  font-family: cursive;
+  color:pink;
+}

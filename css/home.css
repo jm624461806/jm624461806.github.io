@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  color: white;
+  position: fixed;
+}
+
+.nav-header{
+  display: inline;
+}
+.nav-title {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.nav-links a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: red;
+}
+
+.intro {
+  background-color: #4d4d4d;
+  color:white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro-words{
+  margin-top: 50px;
+  padding: 20px;
+  font-family: cursive;
+}
+
+.intro img {
+  margin-top: 30px;
+  width: 300px;
+  padding: 40px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.education-header {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px;
+}
+
+.education-specific {
+  display: grid;
+  grid-template-columns: 4fr 10fr;
+}
+
+.education-text {
+  padding-left: 50px;
+  padding-top: 80px;
+}
+
+
+.education img {
+  margin: 40px;
+  width:130px;
+  height: 130px;
+}
+

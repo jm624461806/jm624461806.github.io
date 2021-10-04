@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  color: white;
+  position: fixed;
+}
+
+.nav-header{
+  display: inline;
+}
+.nav-title {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.nav-links a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: red;
+}
+
+.contact-header {
+  padding-top: 120px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.table-parent {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-properties {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+tr.table-rows>td{ 
+  padding: 40px;
+}

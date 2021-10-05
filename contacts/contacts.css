@@ -29,6 +29,13 @@ body {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .nav-title{
+    font-size: 10px;
+    padding: 3px;
+  }
+}
+
 .nav-links {
   display: inline;
   float: right;
@@ -64,64 +71,59 @@ a:active {
   color: red;
 }
 
-.project-header {
-  padding-top: 100px;
+.contact-header {
+  padding-top: 120px;
   font-size: 30px;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .project-header{
+  .contact-header{
     font-size: 15px;
-    padding-top: 50px;
   }
 }
 
-.projects {
+.table-parent {
+  margin-left: 10px;
+  padding-top: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.title-anchor {
-  text-decoration: none;
-  color: white;
-}
-
-.project-specific {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.table-properties {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .project-specific{
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 8fr;
+  .table-properties{
+    font-size: 10px;
   }
 }
 
-.project-title {
-  padding-left: 250px;
-  padding-top: 36px;
-}
-
-@media screen and (max-width: 768px) {
-  .project-title{
-    padding-left: 40px;
+@media screen and (max-width: 320px) {
+  .table-properties{
+    font-size: 8px;
   }
 }
 
-.project-description {
-  width: 680px;
-  padding-left: 20px;
+.table-properties img {
+  width: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .project-description{
-    width: 230px;
-    padding-left:0px;
+  .table-properties img{
+    width: 40px;
+  }
+}
+
+tr.table-rows>td{ 
+  padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  tr.table-rows>td{
+    padding: 15px;
   }
 }
